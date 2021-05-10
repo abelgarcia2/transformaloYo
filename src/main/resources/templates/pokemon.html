@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Pokemon</title>
+</head>
+
+<body>
+
+    <h1>Datos del Pokemon</h1>
+
+    <div class="container">
+        <p>El pokemon <span th:text=${nombre} class="nombre"></span> pesa <span th:text=${peso} class="peso"></span> y
+            mide <span th:text=${altura} class="altura"></span></p>
+        <br />
+        <img th:src="${foto}" />
+    </div>
+
+</body>
+
+</html>
